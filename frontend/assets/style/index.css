@@ -1,0 +1,98 @@
+/* NAVBAR */
+.navbar {
+    background-color: #000;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* esquerda */
+.nav-esquerda {
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+/* centro */
+.nav-logo a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* direita */
+.nav-direita {
+    flex: 1; /* Ocupa o espaço restante */
+}
+
+/* lista */
+.nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* logo */
+.nav-logo img {
+    height: 50px;
+}
+
+.navbar a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* traço escondido */
+.linha::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #E0712B;
+    transition: width 0.3s ease;
+}
+
+/* animação ao passar o mouse */
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.linha:hover {
+    font-weight: 700;
+}
+
+.hero{
+    height: 100vh;
+    display: flex;   /* centraliza conteúdo */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 0px; /* Espaço do menu fixo */
+}
+
+.hero-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+footer{
+    background-color: #555;
+    width: 100%;
+    height: 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+

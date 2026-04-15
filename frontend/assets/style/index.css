@@ -2,7 +2,7 @@
 .navbar {
     background-color: #000;
     color: white;
-    padding: 15px 30px;
+    padding: 15px 120px;
     display: flex;
     align-items: center;
     z-index: 1000;
@@ -21,6 +21,7 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    margin-bottom: 5px;
 }
 
 /* direita */
@@ -31,7 +32,7 @@
 /* lista */
 .nav-list {
     display: flex;
-    gap: 20px;
+    gap: 100px;
     list-style: none;
 }
 
@@ -75,13 +76,11 @@
     text-align: center;
     color: white;
     padding-top: 0px; /* Espaço do menu fixo */
+    background-image: url(../img/IMGhero.svg);
+    background-repeat: none;
+    background-size: cover;
 }
 
-.hero-img img{
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
 
 footer{

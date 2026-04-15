@@ -27,6 +27,12 @@
 /* direita */
 .nav-direita {
     flex: 1; /* Ocupa o espaço restante */
+    display: flex;
+    justify-content: end;
+}
+
+.nav-direita img{
+    height: 50px;
 }
 
 /* lista */

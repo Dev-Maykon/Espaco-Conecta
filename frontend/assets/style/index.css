@@ -96,6 +96,7 @@
     width: 100%;
     background-color: #000;
     border-radius: 0% 0% 15px 15px;
+    display: flex;
  }
 
  .sobre-text{
@@ -147,6 +148,21 @@
 
  .sobre-text a:hover{
     color: #E0712B;
+ }
+
+ .adicional-text{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 100%;
+    width: 50%;
+    padding: 15px 80px;
+ }
+ .adicional-text h2{
+    color: #fff;
+    font-size: 60px;
+    padding-bottom: 35px;
  }
 
 footer{

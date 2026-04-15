@@ -80,7 +80,6 @@
     display: flex;   /* centraliza conteúdo */
     align-items: center;
     justify-content: center;
-    text-align: center;
     color: white;
     padding-top: 0px; /* Espaço do menu fixo */
     background-image: url(../img/IMGhero.svg);
@@ -90,7 +89,51 @@
 
 /* SOBRE NOS */
  .sobre-nos{
+    height: 400px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0% 0% 15px 15px;
+ }
 
+ .sobre-text{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    height: 380px;
+    width: 50%;
+    padding: 30px 80px;
+ }
+
+ .sobre-text h2{
+    font-size: 60px;
+    padding-bottom: 35px;
+ }
+
+ .sobre-text p{
+    font-size: 25px;
+    padding-bottom: 35px;
+ }
+
+ .sobre-text button{
+    width: 182px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #E0712B;
+    border: none;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+ }
+
+ .sobre-text button p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
  }
 
 

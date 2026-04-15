@@ -50,6 +50,7 @@
 .navbar a {
     position: relative;
     color: #fff;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -62,7 +63,7 @@
     left: 0;
     bottom: -5px;
     background-color: #E0712B;
-    transition: width 0.3s ease;
+    transition: width 0.5s ease;
 }
 
 /* animação ao passar o mouse */
@@ -71,11 +72,12 @@
 }
 
 .linha:hover {
-    font-weight: 700;
+    color: #E0712B;
+    transition: 0.5s;
 }
 
 .hero{
-    height: 700px;
+    height: 780px;
     width: 100%;
     display: flex;   /* centraliza conteúdo */
     align-items: center;
@@ -89,54 +91,63 @@
 
 /* SOBRE NOS */
  .sobre-nos{
+    border: 1px solid red;
     height: 400px;
     width: 100%;
     background-color: #000;
-    color: #fff;
     border-radius: 0% 0% 15px 15px;
  }
 
  .sobre-text{
-    border: 1px solid red;
+    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     text-align:left;
-    height: 380px;
+    height: 100%;
     width: 50%;
     padding: 30px 80px;
  }
 
  .sobre-text h2{
+    color: #fff;
     font-size: 60px;
     padding-bottom: 35px;
  }
 
  .sobre-text p{
-    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 18px;
     padding-bottom: 35px;
  }
 
- .sobre-text button{
+ .sobre-text a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+ }
+
+ .saiba-mais{
     width: 182px;
     height: 40px;
     border-radius: 10px;
     background-color: #E0712B;
     border: none;
+
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;
+    align-items: center; /* Centraliza verticalmente */
  }
 
- .sobre-text button p{
-    margin: 0;
-    font-size: 15px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;
+ .saiba-mais:hover{
+    background-color: #ffffff;
+    transform: scale(1.05);
+    transition: 0.7s;
  }
 
-
+ .sobre-text a:hover{
+    color: #E0712B;
+ }
 
 footer{
     background-color: #555;

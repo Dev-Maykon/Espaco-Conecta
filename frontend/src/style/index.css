@@ -42,6 +42,7 @@
     display: flex;
     gap: 100px;
     list-style: none;
+    font-weight: 600;
 }
 
 /* logo */
@@ -51,9 +52,27 @@
 
 .navbar a {
     position: relative;
-    color: #fff;
-    font-weight: 600;
     text-decoration: none;
+}
+.linha-id {
+    color: #E0712B;
+    font-weight: 700;
+}
+
+.linha-id::before{
+   color: #E0712B;
+   content: "";
+   position: absolute;
+   width: 0%;
+   height: 2px;
+   left: 0;
+   bottom: -5px;
+   background-color: #E0712B;
+   width: 100%;
+}
+
+.linha{
+   color: white;
 }
 
 /* traço escondido */
@@ -135,6 +154,7 @@
     border-radius: 10px;
     background-color: #E0712B;
     border: none;
+    font-weight: 700;
 
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */

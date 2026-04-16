@@ -118,7 +118,6 @@
 
  .sobre-text p{
     color: #fff;
-    font-weight: 100;
     font-size: 18px;
     padding-bottom: 35px;
  }
@@ -126,8 +125,9 @@
  .sobre-text a{
     text-decoration: none;
     color: white;
-    font-weight: 600;
  }
+
+ /* Botão saiba mais */
 
  .saiba-mais{
     width: 182px;
@@ -139,17 +139,21 @@
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
+    transition: background-color 0.4s ease, transform 0.10s ease;
  }
 
  .saiba-mais:hover{
     background-color: #ffffff;
     transform: scale(1.05);
-    transition: 0.7s;
  }
 
  .sobre-text a:hover{
     color: #E0712B;
+    transform: 0.4s;
+    font-weight: 700;
  }
+
+ /* Texto informativo ao lado de sobre nos */
 
  .adicional-text{
     display: flex;
@@ -172,7 +176,6 @@
  .adicional-text p{
     color: white;
     font-size: 18px;
-    font-weight: 100;
     padding-bottom: 40px;
 
  }
@@ -185,6 +188,28 @@
  .adicional-text2 h2{
     color: white;
     font-size: 35px;
+ }
+
+ .adicional-text2 p{
+    color: white;
+    font-size: 18px;
+    padding-bottom: 40px;
+ }
+
+ /* CARDS */
+
+ .cards{
+   width: 100%;
+   height: 100%;
+ }
+
+ .cards h2{
+   color:white;
+   font-size: 60px;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding-top: 90px;
  }
 
 footer{

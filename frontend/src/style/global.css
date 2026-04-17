@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "arimo", sans-serif;
 }
 
 body{
+    padding-top: 70px;
     background-color: #1D1D1D;
-    font-family: "arimo", sans-serif;
     font-style: normal;
 }

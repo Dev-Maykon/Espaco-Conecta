@@ -1,4 +1,11 @@
 /* NAVBAR */
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 99;
+}
 .navbar {
     background-color: #000;
     color: white;
@@ -109,7 +116,6 @@
 
 .hero img{
    width: 100%;
-   height: 140%;
    object-fit: cover; /*mantém proporções e preenche*/
 }
 
@@ -232,10 +238,17 @@
 
 .card {
   position: relative;
-  width: 400px;
-  height: 680px;
+  width: 350px;
+  height: 450px;
   border-radius: 20px;
   overflow: hidden;
+  transform: scale(1);
+  transition: all 0.5s ease; /* AQUI */
+}
+
+.card:hover{
+   transform: scale(1.06);
+   transition: transform 0.20s ease;
 }
 
  .cards{

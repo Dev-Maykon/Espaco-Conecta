@@ -197,7 +197,7 @@ header{
  .adicional-text{
     display: flex;
     flex-direction: column;
-    text-align: right;
+    text-align: center;
     height: 100%;
     width: 50%;
     padding: 55px 150px;
@@ -215,6 +215,7 @@ header{
  .adicional-text p{
     color: white;
     font-size: 18px;
+    font-weight: 600;
     padding-bottom: 40px;
 
  }
@@ -222,7 +223,7 @@ header{
  .adicional-text2{
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
  }
  .adicional-text2 h2{
     color: white;
@@ -231,6 +232,7 @@ header{
 
  .adicional-text2 p{
     color: white;
+    font-weight: 600;
     font-size: 18px;
     padding-bottom: 40px;
  }
@@ -244,8 +246,27 @@ header{
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 70px 30px;
+    margin: 40px 30px;
 }
+
+.cards{
+   min-width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   gap: 55px;
+   padding-bottom: 55px;
+ }
+
+ .cards h2{
+   color: #ffffff;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+
+ }
 
 .card {
   position: relative;
@@ -262,25 +283,6 @@ header{
    transition: transform 0.20s ease;
 }
 
- .cards{
-   width: 100%;
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
-   gap: 55px;
-   padding-bottom: 100px;
-
- }
-
- .cards h2{
-   color: #ffffff;
-   display: flex;
-   justify-content: center;
-   text-align: center;
-
- }
 
 /* imagem ocupando tudo dentro do card*/
 .card img {
@@ -331,6 +333,7 @@ header{
    border-radius: 10px;
    height: 35px;
    width: 85px;
+   margin-top: 10px;
    background-color: #fff;
    transition: background-color 0.4s ease, transform 0.10s ease;
 }

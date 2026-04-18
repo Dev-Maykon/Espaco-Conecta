@@ -9,13 +9,15 @@ header{
 .navbar {
     background-color: #000;
     color: white;
-    padding: 15px 120px;
+    padding: 15px 40px;
     display: flex;
     align-items: center;
     z-index: 1000;
     position: fixed;
+    margin: 0 auto;
+    padding: 0 70px;
     width: 100%;
-    height: 70px;
+    height: 60px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -105,7 +107,7 @@ header{
 }
 
 .hero{
-   min-height: 100vh;
+   min-height: 90vh;
    width: 100%;
    display: flex;
    align-items: center;
@@ -133,7 +135,8 @@ header{
 
 /* SOBRE NOS */
  .sobre-nos{
-    height: 400px;
+    min-height: 50vh;
+    padding: 40px 40px;
     width: 100%;
     background-color: #000;
     display: flex;
@@ -143,14 +146,13 @@ header{
     display: flex;
     flex-direction: column;
     text-align:left;
-    height: 100%;
     width: 50%;
-    padding: 55px 80px;
+    padding: 30px 40px;
  }
 
  .sobre-text h2{
     color: #fff;
-    font-size: 60px;
+    font-size: 42px;
     padding-bottom: 35px;
  }
 
@@ -200,11 +202,11 @@ header{
     text-align: center;
     height: 100%;
     width: 50%;
-    padding: 55px 150px;
+    padding: 30px 40px;
  }
  .adicional-text h2{
     color: #fff;
-    font-size: 35px;
+    font-size: 28px;
     padding: 0;
  }
 
@@ -215,7 +217,7 @@ header{
  .adicional-text p{
     color: white;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 100;
     padding-bottom: 40px;
 
  }
@@ -232,7 +234,7 @@ header{
 
  .adicional-text2 p{
     color: white;
-    font-weight: 600;
+    font-weight: 100;
     font-size: 18px;
     padding-bottom: 40px;
  }
@@ -241,23 +243,25 @@ header{
 
  .text-center{
     color: white;
-    font-size: 60px;
+    font-size: 42px;
     font-weight: 700;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 40px 30px;
+    padding: 30px 40px;
 }
 
 .cards{
-   min-width: 100%;
-   height: 100vh;
+   min-height: 50vh;
+    padding: 0px 40px;
+    width: 100%;
+   flex-wrap: wrap;
    display: flex;
    justify-content: center;
    align-items: center;
 
    gap: 55px;
-   padding-bottom: 55px;
+   padding-bottom: 30px;
  }
 
  .cards h2{
@@ -335,7 +339,7 @@ header{
    width: 85px;
    margin-top: 10px;
    background-color: #fff;
-   transition: background-color 0.4s ease, transform 0.10s ease;
+   transition: background-color 0.3s ease, transform 0.09s ease;
 }
 
 .button-card:hover{

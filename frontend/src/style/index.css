@@ -9,13 +9,13 @@ header{
 .navbar {
     background-color: #000;
     color: white;
-    padding: 15px 40px;
+    padding: 15px 80px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     z-index: 1000;
     position: fixed;
     margin: 0 auto;
-    padding: 0 70px;
     width: 100%;
     height: 60px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -23,23 +23,25 @@ header{
 
 
 /* esquerda */
-.nav-esquerda {
-    flex: 1; /* Ocupa o espaço disponível */
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* centro */
-.nav-logo a {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
+.nav-logo{
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 /* direita */
 .nav-direita {
-    flex: 1; /* Ocupa o espaço restante */
+    flex: 1;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .nav-direita img{
@@ -49,7 +51,7 @@ header{
 /* lista */
 .nav-list {
     display: flex;
-    gap: 100px;
+    gap: 70px;
     list-style: none;
     font-weight: 600;
 }
@@ -105,41 +107,72 @@ header{
     color: #E0712B;
     transition: 0.5s;
 }
+.hero{ 
+  height: 60vh; /* ocupa a tela toda */
+  background-image: url("../../assets/img/IMGhero.png");
+  background-size: cover;       /* cobre toda a área */
+  background-position: center;  /* centraliza */
+  background-repeat: no-repeat;
 
-.hero{
-   min-height: 100vh;
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding-top: 0px;
-   background-image: url(../../assets/img/IMGhero.png);
-   background-repeat: none;
-   background-size: cover;
+  display: flex;
+  align-items: center;   /* centraliza vertical */
+  justify-content: center; /* texto ao centro */
+  padding: 0 80px;
+  position: relative;
 }
+
+.hero-content {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+#laranja {
+   display: flex;
+  font-size: 95px;
+  font-weight: 700;
+  color: #E0712B;
+}
+
+.hero-content h1{
+   display: flex;
+   gap: 30px;
+   font-size: 90px;
+   font-weight: 700;
+   color: white;
+}
+
+.hero-content p {
+   display: flex;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+
 
 .hero::before{
    content: "";
    position: absolute;
    inset: 0;
-   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.hero > * {
-   position: relative;
-   z-index: 2;
-   max-width: 1200px;
-   text-align: center;
+   background-color: rgba(0, 0, 0, 0.7);
 }
 
 
 /* SOBRE NOS */
  .sobre-nos{
-    min-height: 50vh;
+    min-height: 1n  0vh;
     padding: 0px 40px;
     width: 100%;
     background-color: #000;
     display: flex;
+    padding-top: 0px;
  }
 
  .sobre-text{
@@ -170,16 +203,22 @@ header{
  /* Botão saiba mais */
 
  .saiba-mais{
-    width: 182px;
+   display: flex;
+   justify-content:baseline;
+   align-items:center;
+   width: 182px;
     height: 40px;
     border-radius: 10px;
     background-color: #E0712B;
     border: none;
     font-weight: 700;
+ }
 
+
+ .saiba-mais{
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza verticalmente */
     transition: background-color 0.4s ease, transform 0.10s ease;
  }
 
@@ -202,7 +241,7 @@ header{
     text-align: center;
     height: 100%;
     width: 50%;
-    padding: 30px 40px;
+    padding: 0px 40px;
  }
  .adicional-text h2{
     color: #fff;
@@ -357,4 +396,3 @@ footer{
     text-align: center;
     padding: 20px;
 }
-

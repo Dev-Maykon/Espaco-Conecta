@@ -42,12 +42,26 @@ header{
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    gap: 15px;
 }
 
 .nav-direita img{
     height: 40px;
 }
 
+#favoritos img{
+   height: 35px;
+}
+
+#favoritos img:hover{
+   transform: scale(1.2);
+   transition: transform 0.5s;
+}
+
+#reservas img:hover{
+   transform: scale(1.2);
+   transition: transform 0.5s;
+}
 /* lista */
 .nav-list {
     display: flex;
@@ -108,7 +122,7 @@ header{
     transition: 0.5s;
 }
 .hero{ 
-  height: 60vh; /* ocupa a tela toda */
+  height: 600px; /* ocupa a tela toda */
   background-image: url("../../assets/img/IMGhero.png");
   background-size: cover;       /* cobre toda a área */
   background-position: center;  /* centraliza */
@@ -167,11 +181,13 @@ header{
 
 /* SOBRE NOS */
  .sobre-nos{
-    min-height: 1n  0vh;
+   height: 350px;
     padding: 0px 40px;
     width: 100%;
     background-color: #000;
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 0px;
  }
 
@@ -241,7 +257,7 @@ header{
     text-align: center;
     height: 100%;
     width: 50%;
-    padding: 0px 40px;
+       padding: 30px 40px;
  }
  .adicional-text h2{
     color: #fff;
@@ -383,6 +399,44 @@ header{
 
 .button-card:hover{
    background-color: #E0712B;
+}
+
+.conteiner-filtros {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+/* SIDEBAR */
+.filtros {
+   height: 800px;
+  width: 100%;
+   background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* GRID */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  flex: 1;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 footer{

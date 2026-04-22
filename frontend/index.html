@@ -17,30 +17,34 @@
 
 <body>
     <!-- NAVBAR -->
-     <header class="header">
-         <nav class="navbar">
-             <div class="nav-links">
-                 <ul class="nav-list">
-                     <li><a href="#home" class="linha-id">Home</a></li>
-                     <li><a href="#reservas" class="linha">Reservas</a></li>
-                     <li><a href="#sobre" class="linha">Sobre</a></li>
-                 </ul>
-                </div>
-                <div class="nav-logo">
-                    <a href="#home" id="logo">
-                        <img src="./assets/img/logo-espaço-conecta.svg" alt="lOGO D">
-                    </a>
-                </div>
-     
-     
-             <div class="nav-direita">
-                 <a href="#" id="reservas" class="logo-perfl">
-                     <img src="../frontend/assets/img/Img-perfil.svg"
-                         alt="Imagem de uma silhueta de uma pessoal, para representar o perfil">
-                 </a>
-             </div>
-         </nav>
-     </header>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-links">
+                <ul class="nav-list">
+                    <li><a href="#home" class="linha-id">Home</a></li>
+                    <li><a href="#reservas" class="linha">Reservas</a></li>
+                    <li><a href="#sobre" class="linha">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="nav-logo">
+                <a href="#home" id="logo">
+                    <img src="./assets/img/logo-espaço-conecta.svg" alt="lOGO D">
+                </a>
+            </div>
+
+
+            <div class="nav-direita">
+                <a href="#" id="reservas" class="logo-perfl">
+                    <img src="../frontend/assets/img/Img-perfil.svg"
+                        alt="Imagem de uma silhueta de uma pessoal, para representar o perfil">
+                </a>
+                <a href="#" id="favoritos" class="logo-perfl">
+                    <img src="../frontend/assets/img/Favorite.svg"
+                        alt="Imagem de uma silhueta de uma pessoal, para representar o perfil">
+                </a>
+            </div>
+        </nav>
+    </header>
 
     <!-- HERO (seção principal) -->
     <section id="home" class="hero">
@@ -53,13 +57,13 @@
 
     <!-- Sobre nos -->
     <section id="sobre" class="sobre-nos">
-            <div class="sobre-text">
-                <h2>SOBRE NÓS</h2>
-                <p>O Espaço Conecta é um coworking comunitário localizado na periferia, criado para oferecer estrutura,
-                    networking e oportunidades para empreendedores, estudantes e profissionais da comunidade, promovendo
-                    inovação, colaboração e desenvolvimento local.</p>
-                <a href="#sobre" class="saiba-mais">SAIBA MAIS</a>
-                </div>
+        <div class="sobre-text">
+            <h2>SOBRE NÓS</h2>
+            <p>O Espaço Conecta é um coworking comunitário localizado na periferia, criado para oferecer estrutura,
+                networking e oportunidades para empreendedores, estudantes e profissionais da comunidade, promovendo
+                inovação, colaboração e desenvolvimento local.</p>
+            <a href="#sobre" class="saiba-mais">SAIBA MAIS</a>
+        </div>
         <div class="adicional-text">
             <h2><span id="maior">+10</span> Espaços</h2>
             <p>Para Trabalhos Individuais Ou Em Equipe</p>
@@ -84,7 +88,7 @@
         </div>
         <div class="card">
             <img src="../frontend/assets/img/SalaReunião03.png" alt="">
-             <div class="card-conteiner">
+            <div class="card-conteiner">
                 <h2>Salas Individuais</h2>
                 <div class="button-card">
                     <a href="">Acessar</a>
@@ -93,7 +97,7 @@
         </div>
         <div class="card">
             <img src="../frontend/assets/img/SalaReunião04.png" alt="">
-             <div class="card-conteiner">
+            <div class="card-conteiner">
                 <h2>Salas de Treinamento</h2>
                 <div class="button-card">
                     <a href="">Acessar</a>
@@ -101,6 +105,51 @@
             </div>
         </div>
     </section>
+
+    <!-- FILTROS -->
+
+    <div class="conteiner-filtros">
+
+        <aside class="filtros">
+            <h2>Filtros</h2>
+
+            <h3>Espaços</h3>
+            <label><input type="checkbox" value="individual">Individual</label>
+            <label><input type="checkbox" value="reuniao">Sala de Reunião</label>
+            <label><input type="checkbox" value="equipe">Equipe</label>
+
+            <h3>Infraestrutura</h3>
+            <label><input type="checkbox" value="wifi">Wi-Fi</label>
+            <label><input type="checkbox" value="cozinha">Cozinha</label>
+            <label><input type="checkbox" value="projetor">Projetor</label>
+            <label><input type="checkbox" value="ar">Ar-Condicionado</label>
+            <label><input type="checkbox" value="impressora">Impressora</label>
+
+            <h3>Capacidade</h3>
+            <label><input type="checkbox" value="1-2"> 1-2 Pessoas</label>
+            <label><input type="checkbox" value="3-5"> 3-5 Pessoas</label>
+
+            <button id="limpar">Limpar Filtros</button>
+        </aside>
+
+        <!-- PRODUTOS -->
+        <main class="produtos" id="listaProdutos">
+
+            <div class="card" data-espaco="individual" data-capacidade="1-2">
+                <img src="img1.jpg">
+                <h4>Sala Individual</h4>
+                <button>Reservar</button>
+            </div>
+
+            <div class="card" data-espaco="reuniao" data-capacidade="3-5">
+                <img src="img2.jpg">
+                <h4>Sala Reunião</h4>
+                <button>Reservar</button>
+            </div>
+
+            <script src="./src/js/filtro.js"></script>
+        </main>
+    </div>
 
     <!-- 4️⃣ FOOTER -->
     <footer>

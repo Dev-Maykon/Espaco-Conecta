@@ -137,25 +137,30 @@
             </button>
         </aside>
 
-        <!-- PRODUTOS -->
         <main class="produtos" id="listaProdutos">
 
-            <!-- 🔍 BARRA DE BUSCA (COLE AQUI) -->
             <div class="top-bar">
                 <input type="text" id="searchInput" placeholder="Localização">
                 <button id="btnPesquisar">Pesquisar</button>
             </div>
 
-            <div class="card" data-espaco="individual" data-capacidade="1-2">
-                <img src="./assets/img/SalaReunião01.png">
-                <h4>Sala Individual</h4>
-                <button>Reservar</button>
-            </div>
-
-            <div class="card" data-espaco="reuniao" data-capacidade="3-5">
-                <img src="./assets/img/SalaReunião03.png">
-                <h4>Sala Reunião</h4>
-                <button>Reservar</button>
+            <div class="colab-card">
+                <div class="card" data-espaco="individual" data-capacidade="1-2">
+                    <img src="./assets/img/SalaReunião01.png">
+                    <div class="colab-titulo">
+                        <h4>Sala Individual</h4>
+                        <p>Espaço para locação, ideal para reuniões, eventos, workshops ou atividades profissionais.</p>
+                        <button class="button-reserva">Reservar</button>
+                    </div>
+                </div>
+    
+                <div class="card" data-espaco="reuniao" data-capacidade="3-5">
+                    <img src="./assets/img/SalaReunião03.png">
+                    <div class="colab-titulo">
+                        <h4>Reunião</h4>
+                        <p>Espaço para locação, ideal para reuniões, eventos, workshops ou atividades profissionais.</p>
+                        <button class="button-reserva">Reservar</button>
+                </div>
             </div>
 
             <script src="./src/js/pesquisa.js"></script>
@@ -164,8 +169,19 @@
 
     <!-- 4️⃣ FOOTER -->
     <footer>
+        <div class="nav-logo">
+                <a href="#home" id="logo">
+                    <img src="./assets/img/logo-espaço-conecta.svg" alt="lOGO D">
+                </a>
+            </div>
         <div class="div-text">
-            <p>&copy; 2024 Meu Site. Todos os direitos.</p>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                    <a href="#reserva">Rerseva</a>
+                    <a href="#sobre">Sobre</a>
+                </li>
+            </ul>
         </div>
     </footer>
 

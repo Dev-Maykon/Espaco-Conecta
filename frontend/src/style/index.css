@@ -1,3 +1,11 @@
+:root{
+    --primary-color: #E0712B;
+    --secondary-color: #1D1D1D;
+    --text-color: #FFFFFF;
+    --background-color: #000000;
+    --font-family: "arimo", sans-serif;
+}
+
 /* NAVBAR */
 header{
    position: fixed;
@@ -46,7 +54,7 @@ header{
 }
 
 .nav-direita img{
-    height: 40px;
+    height: 35px;
 }
 
 #favoritos img{
@@ -330,7 +338,7 @@ flex-direction: column;
 .card {
   position: relative;
   width: 350px;
-  height: 490px;
+  height: 460px;
   border-radius: 20px;
   overflow: hidden;
   transform: scale(1);
@@ -391,7 +399,7 @@ flex-direction: column;
    align-items: center;
    border-radius: 10px;
    height: 35px;
-   width: 85px;
+   width: 80px;
    margin-top: 0px;
    background-color: #fff;
    transition: background-color 0.3s ease, transform 0.09s ease;
@@ -555,7 +563,7 @@ main {
 
 /* CARD */
 .card {
-  background: #1d1d1d;
+  background: #555;
   color: #ffffff;
   padding: 10px;
   border-radius: 10px;
@@ -598,45 +606,94 @@ main {
    border: none;
 }
 
+/* FOOTER */
+
 footer{
     background-color: #000000;
     width: 100%;
-    height: 200px;
-    color: white;
+    height: 250px;
+    padding-top: 20px;
+}
+
+.nav-footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      list-style: none;
+      font-weight: 600;
+}
+
+.nav-ul-footer{
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   font-weight: 600;
+}
+
+.nav-links-footer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    gap: 60px;
+    margin-bottom: 20px;
 }
 
-.div-text{
-   display: flex;
-}
-.div-text ul{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.div-text li{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 50px;
-}
-
-.div-text a{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color:white;
+.nav-links-footer a{
+   color: white;
    text-decoration: none;
 }
 
-.div-texta a li:hover{
-   background-color: #E0712B;
-   color: white;
-   transform: scale(1.0);
-   transition: background-color 0.3s ease, transform 0.09s ease;
+.nav-links-footer a:hover{
+   color: #E0712B;
+   transform: scale(1.1);
+   transition: var(--primary-color) transform 0.2s ease;
+   font-weight: 700;
+}
+
+.nav-logo-footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 50px;
+}
+
+.nav-logo-footer img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+}
+
+.conteiner-divisor{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding-bottom: 20px;
+}
+
+.divisor {
+  width: 80%;
+  border: 1px solid #E0712B;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.nav-direita-footer {
+   margin-right: 130px;
+   margin-bottom: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.nav-direita-footer img{
+    height: 20px;
+}
+
+.logo-perfil-footer img{
+   height: 35px;
 }

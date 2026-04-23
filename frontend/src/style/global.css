@@ -11,3 +11,11 @@ body{
     margin: 0;
     background-color: #1D1D1D;
 }
+
+:root{
+    --primary-color: #E0712B;
+    --secondary-color: #1D1D1D;
+    --text-color: #FFFFFF;
+    --background-color: #000000;
+    --font-family: "arimo", sans-serif;
+}

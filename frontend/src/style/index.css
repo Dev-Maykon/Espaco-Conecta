@@ -54,11 +54,11 @@ header{
 }
 
 .nav-direita img{
-    height: 35px;
+    height: 30px;
 }
 
 #favoritos img{
-   height: 35px;
+   height: 30px;
 }
 
 #favoritos img:hover{
@@ -533,7 +533,7 @@ main {
   border-radius: 10px;
   border: 1px solid #ffffff;
   background-color: #ffffff;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 #btnPesquisar {
@@ -682,16 +682,17 @@ footer{
 }
 
 .nav-direita-footer {
-   margin-right: 130px;
+   flex: 1;
+   margin-right: 160px;
    margin-bottom: 10px;
     display: flex;
     align-items: end;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 20px;
 }
 
 .nav-direita-footer img{
-    height: 20px;
+    height: 22px;
 }
 
 .logo-perfil-footer img{

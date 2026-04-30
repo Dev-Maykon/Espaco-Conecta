@@ -86,7 +86,12 @@ header{
    transition: transform 0.5s;
 }
 
-
+/*Reservas*/
+.Reservas {
+    display: flex;
+     align-items: center;
+   
+}
 
 /*Titulos*/
 .titulos{
@@ -161,10 +166,16 @@ header{
     
 }
 
+/*status*/
+.status {
+    color: white;
+}
 
 
-
-
+/*Preferencias*/
+.preferencias {
+    color: white;
+}
 
 
 
